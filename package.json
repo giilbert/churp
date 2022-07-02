@@ -1,0 +1,31 @@
+{
+  "name": "churp",
+  "version": "1.0.0",
+  "description": "chirp, remade",
+  "main": "index.js",
+  "scripts": {
+    "dev": "yarn app dev",
+    "build": "prisma generate && yarn app build",
+    "app": "yarn workspace churp-app",
+    "api": "yarn workspace churp-api"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/app",
+    "packages/api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giilbert/churp.git"
+  },
+  "author": "giilbert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giilbert/churp/issues"
+  },
+  "homepage": "https://github.com/giilbert/churp#readme",
+  "devDependencies": {
+    "@prisma/client": "^4.0.0",
+    "prisma": "^4.0.0"
+  }
+}
